@@ -17,5 +17,4 @@ jobs:
           shell: bash
           run: |
             node -v
-            npm install
-            npm test
+            node-version: 'lts/*'
