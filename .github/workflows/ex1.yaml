@@ -5,5 +5,12 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
-    steps: 
-      # TO COMPLETE   
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with: 
+          node-version: lts/*
+      - name: Install
+        uses: run npm install
