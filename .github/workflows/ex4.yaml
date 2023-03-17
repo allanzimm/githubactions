@@ -4,6 +4,6 @@ on:
 
 jobs:
   setup-node-v14:  
-    uses: ./.github/workflows/reusable_workflow.yaml@main
+    uses: ./.github/workflows/reusable_workflow.yaml
     with:
       node-version: "14"
