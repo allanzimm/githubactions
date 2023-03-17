@@ -14,5 +14,9 @@ jobs:
           node-version: lts/*
       - name: Install
         run: npm install -g bats
+  job2:
+    runs-on: ubuntu-latest 
+    needs: job1
+    steps:
       - name: Run bats
         run: bats -v
